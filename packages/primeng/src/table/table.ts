@@ -3562,7 +3562,7 @@ export class FrozenColumn implements AfterViewInit {
     host: {
         '[class]': "cx('sortableColumn')",
         '[tabindex]': 'isEnabled() ? "0" : null',
-        '[role]': '"columnheader"',
+        '[attr.role]': '"columnheader"',
         '[attr.aria-sort]': 'sortOrder'
     },
     providers: [TableStyle]
